@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50%;
 }
 
 .tecs {
@@ -33,11 +32,15 @@
 
 
 .img {
-    width: 15em;
+    width: 10em;
     height: auto;
 }
 
 .sobre span{
     display: flex;
     justify-content: flex-end;
+}
+
+.sobre{
+    max-width: 37%;
 }
