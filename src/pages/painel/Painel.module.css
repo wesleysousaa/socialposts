@@ -1,0 +1,129 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 99%;
+    border-radius: 1em;
+}
+
+.new_post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+
+.button_send_image {
+    display: flex;
+    border: 3px solid black;
+    border-radius: 3px;
+    padding: 0.1em;
+    transition: 0.2s;
+    transform: scale(1, 1);
+    align-items: center;
+    justify-content: center;
+}
+
+.button_send_image:hover {
+    cursor: pointer;
+    border-color: #929982;
+    color: #929982;
+    transition: 0.2s;
+    transform: scale(1.1, 1.1);
+}
+
+.txt_area {
+    min-height: 5em;
+    min-width: 25em;
+    max-height: 5em;
+    max-width: 25em;
+}
+
+.image_preview {
+    width: 10em;
+}
+
+.posts {
+    display: flex;
+    flex-direction: row;
+    max-height: 90%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.img_post {
+    width: 13em;
+    height: 13em;
+    border-radius: 0.5em;
+    transform: scale(1, 1);
+    transition: 0.2s;
+}
+
+.post {
+    cursor: pointer;
+    margin: 1.2em;
+    background-color: #929982ab;
+}
+
+.post,
+.img_post:hover {
+    transform: scale(1.1, 1.1);
+    transition: 0.2s;
+
+}
+
+.img_post {
+    padding: 0.3em;
+}
+
+.post button {
+    background-color: rgba(255, 0, 0, 0.716);
+    color: #FFF;
+    display: none;
+    position: absolute;
+    width: min-content;
+    transition: 0.5s;
+    word-wrap: break-word;
+}
+
+.post:hover button {
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    top: 0em;
+    right: 0em;
+}
+
+.back_button{
+    display: flex;
+    width: min-content;
+    margin: 1em;
+    
+}
+
+
+.back_button:hover{
+    color: black;
+}
+
+.posts_area{
+    display: flex;
+    flex-direction: column;
+}
+
+.hashtags{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input_hash{
+    width: min-content;
+}
+

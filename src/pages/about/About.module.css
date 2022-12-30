@@ -1,0 +1,43 @@
+.info {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecs {
+    display: flex;
+}
+
+.firebase,
+.react,
+.sobre,
+.tecstitle {
+    margin: 1em;
+    background-color: #FFF;
+    border-radius: 1em;
+    box-shadow: 7px 7px 4px 1px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    padding: 1em;
+    transform: scale(1, 1);
+    transition: 0.2s;
+}
+
+.firebase:hover,
+.react:hover {
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: 0.2s;
+}
+
+
+.img {
+    width: 20em;
+    height: auto;
+}
+
+.sobre span{
+    display: flex;
+    justify-content: flex-end;
+}
