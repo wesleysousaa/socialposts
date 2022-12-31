@@ -26,7 +26,7 @@ function Painel() {
   const [open, setOpen] = useState(false)
   const [posts, setPosts] = useState()
 
-  const { loading, setLoading } = LoadingContextValue()
+  const { loading } = LoadingContextValue()
   const { user } = useUserContext()
 
 

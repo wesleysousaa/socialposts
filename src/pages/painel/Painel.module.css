@@ -134,6 +134,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: fit-content;
     }
 
     .posts_area{
@@ -149,5 +150,9 @@
     .posts{
         align-items: center;
         justify-content: center;
+    }
+
+    .new_post form{
+        padding: 1em;
     }
 }
