@@ -5,11 +5,9 @@ import styles from './Painel.module.css'
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import CircularProgress from '@mui/material/CircularProgress';
 import IconButton from '@mui/material/IconButton';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { Button } from '@mui/material';
 
 // Hooks
 import { useUserContext } from '../../hooks/useUserContext'

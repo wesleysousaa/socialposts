@@ -12,7 +12,7 @@ function About() {
       <div className={styles.tecstitle}>
         <h1>Tecnologias</h1>
         <div className={styles.tecs}>
-          <div className={styles.firebase}>
+          <div className={styles.tec}>
             <h2>FireBase</h2>
             <a href='https://firebase.google.com/' target='_blank'>
               <img
@@ -21,7 +21,7 @@ function About() {
                 alt="firebase" />
             </a>
           </div>
-          <div className={styles.react}>
+          <div className={styles.tec}>
             <h2>ReactJs</h2>
             <a href='https://pt-br.reactjs.org/' target='_blank'>
               <img
@@ -30,7 +30,7 @@ function About() {
                 alt="react" />
             </a>
           </div>
-          <div className={styles.react}>
+          <div className={styles.tec}>
             <h2>MUI</h2>
             <a href='https://mui.com/' target='_blank'>
               <img

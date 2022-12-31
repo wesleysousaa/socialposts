@@ -1,5 +1,5 @@
 .container {
-    height: 80vh;
+    height: 100%;
     width: 100%;
     background-color: #FCF7FF;
     display: flex;
@@ -12,8 +12,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: fit-content;
 }
 
 .active{
     background-color: #333333;
+}
+
+@media (max-width: 700px) {
+    .app{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .app{
+        width: fit-content;
+    }
 }

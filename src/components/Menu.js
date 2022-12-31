@@ -1,81 +1,101 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import styles from './Menu.module.css'
 
+// Hooks
 import { useUserContext } from '../hooks/useUserContext'
 import { useArthentication } from '../hooks/useAuthentication';
 
-import { Drawer } from '@mui/material';
-import Divider from '@mui/material/Divider';
-import MenuIcon from '@mui/icons-material/Menu';
-import IconButton from '@mui/material/IconButton';
+// MUI
+import HomeIcon from '@mui/icons-material/Home';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import InfoIcon from '@mui/icons-material/Info';
+import LogoutIcon from '@mui/icons-material/Logout';
+import LoginIcon from '@mui/icons-material/Login';
 
 function Menu() {
 
   const { user } = useUserContext()
   const { singOutt } = useArthentication()
-  const [open, setOpen] = useState(false)
 
   return (
     <nav>
       <Link to='/' className={styles.logo}>
         Social <span className={styles.brand}><strong> Posts </strong></span>
       </Link>
-      <ul className={styles.menu}>
+      <ul className={styles.menuul}>
         <li>
           <NavLink to='/' className={styles.botoes}>
+            <span className={styles.icon}>
+              <HomeIcon />
+            </span>
+            <span className={styles.text}>
               Home
+            </span>
           </NavLink>
         </li>
         <li>
           <NavLink to='/painel' className={styles.botoes}>
-            Painel
+            <span className={styles.icon}>
+              <DashboardIcon />
+            </span>
+            <span className={styles.text}>
+              Painel
+            </span>
           </NavLink>
         </li>
         <li>
           <NavLink to='/about' className={styles.botoes}>
-            Sobre nós
+            <span className={styles.icon}>
+              <InfoIcon />
+            </span>
+            <span className={styles.text}>
+              Sobre nós
+            </span>
           </NavLink>
         </li>
         <li>
           {!user ?
             (<NavLink to={'/login'} className={styles.botoes}>
-              Login
+              <span className={styles.icon}>
+                <LoginIcon />
+              </span>
+              <span className={styles.text}>
+                Login
+              </span>
             </NavLink>) :
             (<Link onClick={singOutt} className={styles.botoes}>
-              Sair
+              <span className={styles.icon}>
+                <LogoutIcon />
+              </span>
+              <span className={styles.text}>
+                Sair
+              </span>
             </Link>)
           }
         </li>
       </ul>
-      {/* <Drawer
-        variant="persistent"
-        anchor="right"
-        open={open}
-      >
-
+      {/* <div className="menu_mobile">
         <ul className={styles.menu_mobile}>
           <li>
-            <NavLink to='/' className={styles.botoes}>Home</NavLink>
+            <NavLink to='/' className={styles.botoes}>
+
+            </NavLink>
           </li>
           <li>
-            <NavLink to='/painel' className={styles.botoes}>Painel</NavLink>
+            <NavLink to='/painel' className={styles.botoes}></NavLink>
           </li>
           <li>
-            <NavLink to='/about' className={styles.botoes}>Sobre nós</NavLink>
+            <NavLink to='/about' className={styles.botoes}></NavLink>
           </li>
           <li>
             {!user ?
-              (<NavLink to={'/login'} className={styles.botoes}>Login</NavLink>) :
-              (<Link onClick={singOutt} className={styles.botoes}>Sair</Link>)
+              (<NavLink to={'/login'} className={styles.botoes}></NavLink>) :
+              (<Link onClick={singOutt} className={styles.botoes}></Link>)
             }
           </li>
         </ul>
-
-      </Drawer>
-      <button onClick={() => setOpen(!open)}>
-        <MenuIcon />
-      </button> */}
+      </div> */}
     </nav>
   )
 }
