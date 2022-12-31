@@ -39,8 +39,8 @@
 }
 
 .txt_area {
-    min-height: 5em;
-    min-width: 25em;
+    height: 5em;
+    width: 25em;
     max-height: 5em;
     max-width: 25em;
 }
@@ -154,5 +154,11 @@
 
     .new_post form{
         padding: 1em;
+    }
+}
+
+@media (max-width: 585px) {
+    .txt_area{
+        width: fit-content;
     }
 }
