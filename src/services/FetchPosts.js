@@ -12,7 +12,7 @@ export async function FetchPosts() {
 
     let dataLiquida = []
     await data.docs.map(post => {
-        
+
         const p = {
             id: post.id,
             uid: post.data().uid,

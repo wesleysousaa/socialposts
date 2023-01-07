@@ -104,7 +104,7 @@ function Register() {
                         Confirme sua senha
                         <input type="password" name="senhaC" onChange={(e) => setSenhaConfirm(e.target.value)} required />
                     </label>
-                    {loading && <CircularProgress color="inherit"></CircularProgress>}
+                    {loading && <CircularProgress color="inherit" />}
                     {!loading && <button onClick={(e) => handleRegister(e, 'success')}>Cadastrar</button>}
                 </form>
                 <Link className='cadastrar_login' to='/login'>Já possui cadastro?</Link>
